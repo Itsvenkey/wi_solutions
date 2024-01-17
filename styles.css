@@ -247,7 +247,7 @@ height: 100vh;
   font-size: xx-large;
   text-align: center;
 }
-#services img{
+#services img:not(#arrow-left,#arrow-right){
   height: 400px;
   width:400px;
   border-radius: 50%;
@@ -262,7 +262,7 @@ height: 100vh;
   z-index: 1; /* Push the images behind the heading */
 }
 
-#services img:hover {
+#services img:hover:not(#arrow-left,#arrow-right) {
   transform: translateY(-10px);
   filter: drop-shadow(0px 5px 40px rgb(0, 0, 0));
 }
@@ -323,7 +323,7 @@ padding-top: 80px;
   
 }
 
-#team img{
+#team img:not(#team-arrow-right,#team-arrow-left){
     height: 400px;
     width:400px;
     border-radius: 50%;
@@ -347,7 +347,7 @@ padding-top: 80px;
   z-index: 1; /* Push the images behind the heading */
 }
 
-#team img:hover {
+#team img:hover:not(#arrow-right,#arrow-left) {
   transform: translateY(-10px);
   filter: drop-shadow(0px 5px 40px rgb(0, 0, 0));
 }
@@ -380,7 +380,7 @@ padding-top: 80px;
   position: relative;
 }
 
-#contact img{
+#contact img:not(#contact-arrow-right,#contact-arrow-left){
   height: 200px;
   width:200px;
   aspect-ratio: 3/2;
@@ -403,7 +403,7 @@ white-space: nowrap;
 z-index: 1; /* Push the images behind the heading */
 }
 
-#contact img:hover {
+#contact img:hover:not(#arrow-right,#arrow-left) {
 transform: translateY(-10px);
 filter: drop-shadow(0px 5px 40px rgb(0, 0, 0));
 }
@@ -443,24 +443,6 @@ padding-top: 80px;
   white-space: nowrap;
 }
 
-/* .heading-container {
-  display: flex;
-  padding: 40% 10%;
-  vertical-align: middle;
-  border-radius: 0 50% 50% 0;
-  background: linear-gradient(
-    to right,
-    #b8b8ff 0%,
-    #c9c9ff 50%,
-    #efeffc00 100%
-  );
-  z-index: 2;
-} */
-
-
-
-
-
 .first-pic{
     margin-left: 25%;
 }
@@ -499,4 +481,20 @@ filter: drop-shadow(0px 5px 40px rgb(0, 0, 0));
   font-weight: bold; /* Optionally make the text bold */
 }
 
+
+
+.arrow-container {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 3;
+  border-radius: 50%;
+}
+
+.arrow{
+  height: 40px; width: 40px;
+  transition: transform 0.3s ease-in-out; transform-origin: center; cursor: pointer;
+}
 
