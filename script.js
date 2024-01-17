@@ -53,3 +53,71 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+  // const teamList = document.querySelector('.team-list');
+  // const imageWidth = 450; // Adjust this value based on your image width
+  // const scrollAmount = imageWidth;
+  
+  // function scrollToNextImage() {
+  //     teamList.scrollTo({
+  //         left: teamList.scrollLeft + scrollAmount,
+  //         behavior: 'smooth'
+  //     });
+  // }
+
+  // function scrollToPreviousImage(){
+  //   teamList.scrollTo({
+  //     left:teamList.scrollLeft-scrollAmount,
+  //     behavior:'smooth'
+  //   });
+  // }
+
+  function scrollToNextImage(containerSelector, scrollAmount) {
+    const container = document.querySelector(containerSelector);
+  
+    if (container) {
+      container.scrollTo({
+        left: container.scrollLeft + scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  }
+
+  function scrollToPreviousImage(containerSelector, scrollAmount) {
+    const container = document.querySelector(containerSelector);
+  
+    if (container) {
+      container.scrollTo({
+        left: container.scrollLeft - scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  }
+
+  function zoomIn(elementId) {
+    document.getElementById(elementId).style.transform = 'scale(1.2)';
+  }
+  
+  function zoomOut(elementId) {
+    document.getElementById(elementId).style.transform = 'scale(1)';
+  }
+  
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const background = document.getElementById("background");
+    const adaptiveImage = document.getElementById("adaptiveImage");
+
+    // Get the background color dynamically
+    const backgroundColor = window.getComputedStyle(background).backgroundColor;
+
+    // Adjust the filter based on the background color
+    const filterValue = isDarkColor(backgroundColor) ? "invert(100%)" : "invert(0%)";
+    adaptiveImage.style.filter = filterValue;
+
+    // Function to check if a color is dark
+    function isDarkColor(color) {
+      // Convert color to RGB
+      const rgb = color.match(/\d+/g);
+      const brightness = (0.299 * rgb[0] + 0.587 * rgb[1] + 0.114 * rgb[2]) / 255;
+      return brightness < 0.5;
+    }
+  });
