@@ -101,23 +101,3 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById(elementId).style.transform = 'scale(1)';
   }
   
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const background = document.getElementById("background");
-    const adaptiveImage = document.getElementById("adaptiveImage");
-
-    // Get the background color dynamically
-    const backgroundColor = window.getComputedStyle(background).backgroundColor;
-
-    // Adjust the filter based on the background color
-    const filterValue = isDarkColor(backgroundColor) ? "invert(100%)" : "invert(0%)";
-    adaptiveImage.style.filter = filterValue;
-
-    // Function to check if a color is dark
-    function isDarkColor(color) {
-      // Convert color to RGB
-      const rgb = color.match(/\d+/g);
-      const brightness = (0.299 * rgb[0] + 0.587 * rgb[1] + 0.114 * rgb[2]) / 255;
-      return brightness < 0.5;
-    }
-  });
