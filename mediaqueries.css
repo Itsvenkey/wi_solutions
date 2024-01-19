@@ -310,6 +310,12 @@
         display: flex;
         flex-direction: column;
         z-index: 0; /* Push the images behind the heading */
+              background: linear-gradient(
+            to bottom,
+            #b8b8ff 0%,
+            #c9c9ff 50%,
+            #efeffc00 100%
+          ); 
       }
       #services .heading-container {
         height: auto;
@@ -427,6 +433,12 @@
         width: 100vw;
         height: auto;
         z-index: 0; /* Push the images behind the heading */
+              background: linear-gradient(
+            to bottom,
+            #b8b8ff 0%,
+            #c9c9ff 50%,
+            #efeffc00 100%
+          ); 
       }
       
       #team .heading-container{
