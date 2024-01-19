@@ -254,28 +254,44 @@
       }
       
       .service-container {
+        display: flex;
         flex-direction: column;
+  height: auto;
+  width: 100vw;
+  overflow: hidden;
       }
       
       .service-section {
+        display: flex;
         flex-direction: column;
+        height: auto;
+        align-items: center;
       }
       
       #services .first-pic{
-        margin-left: 4%;
+        margin-left: 0;
+      }
+      .services-last-pic{
+        margin: 0;
       }
       .services-list {
-        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: auto;
         width: 100vw;
-        margin-left: 0;
-        height: 100vh;
-        padding-right:0;
-        padding-top: 0;
-        scrollbar-width: 5%;
-        z-index:100;
+        gap: 2rem;
+        margin: 0;
+        height: auto;
+        padding: 20px 0;
+        scrollbar-width: none;
+        overflow: hidden;
+        z-index:0;
+        
       }
       #services li {
-   
+        margin: 0;
         white-space: normal;
         font-family: "Noto Sans", sans-serif;
         font-size: medium;
@@ -283,33 +299,34 @@
       }
 
       #services img:not(#arrow-left,#arrow-right){
-        height: 200px;
-        width:200px;
+        max-width: 100%; /* Ensure images don't exceed their container width */
+        max-height: 100%; /* Set a maximum height for the image */
+        width: 50%; /* Allow the width to adjust according to aspect ratio */
+        height: 50%;
+        border-radius: 50%;
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
       }
       #services {
+        display: flex;
+        flex-direction: column;
         z-index: 0; /* Push the images behind the heading */
       }
       #services .heading-container {
-        height: 100vh;
+        height: auto;
         display: flex;
-        justify-content: center;
         margin: 0;
         padding: 0;
         align-items: normal;
         width: 100vw;
+        vertical-align: 0;
         text-align: center;
         border-radius: 0 0 0 0;
-        background: linear-gradient(
-          to  bottom,
-          #b8b8ff 0%,
-          #c9c9ff 50%,
-          #efeffc00 100%
-        );
-        position:absolute;
-        z-index: -100;
+        background: transparent;
+        position: relative;
+        z-index: 0;
       }
       #services h1{
-        margin: 10%;
+        margin: 0;
       }
       .arrow-container{
         display: none;
@@ -318,7 +335,7 @@
       
       .works-section {
         flex-direction: column;
-        height: 100vh;
+        height: auto;
         width: 100vw;
        
       }
@@ -332,7 +349,7 @@
         justify-content: center;
         margin: 0;
         padding: 0;
-        align-items: normal;
+        align-items: center;
         width: 100vw;
         text-align: center;
       }
@@ -343,38 +360,53 @@
 
           #works img{
             max-width: 100%;
-        width: 95%; 
+        width: 50%; 
       }
       
       .works-list{
-                flex-wrap: nowrap;
-                padding-top: 20%;      
+        margin: 0;
+        width: 100vw;
+        gap: 2rem;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
       }
       
       .works-list li {
         text-align: center; /* Center the text */
-        margin: 1%; /* Add margin between items */
+        margin: 0; /* Add margin between items */
       }
        
       .team-container {
         flex-direction: column;
+        height: auto;
       }
       
       .team-section {
+        height: auto;
         flex-direction: column;
       }
       
       .team-list {
-        height: 100vh;
-        width: 100vw;
-        margin-left: 0;
-        padding-right:0;
-        padding-top: 0;
-        scrollbar-width: auto;
-        z-index:100;
+        margin: 0;
+        height: auto;
 
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        scrollbar-width: none;
+        z-index:100;
+        overflow: hidden;
       }
       
+      .team-last-pic{
+        margin: 0;
+      }
       #team img:not(#team-arrow-right,#team-arrow-left){
         height: 200px;
         width:200px;
@@ -393,13 +425,13 @@
       
       #team {
         width: 100vw;
-        height: 100vh;
+        height: auto;
         z-index: 0; /* Push the images behind the heading */
       }
       
       #team .heading-container{
         
-        height: 100vh;
+        height:auto;
         display: flex;
         justify-content: center;
         margin: 0;
@@ -408,13 +440,8 @@
         width: 100vw;
         text-align: center;
         border-radius: 0 0 0 0;
-        background: linear-gradient(
-          to  bottom,
-          #b8b8ff 0%,
-          #c9c9ff 50%,
-          #efeffc00 100%
-        );
-        position:absolute;
+        background:none;
+        position:relative;
         z-index: -100;
       }
       .team-heading{
@@ -424,7 +451,7 @@
       }
 
       #team .first-pic{
-        margin-left: 10%;
+        margin-left: 0;
       }
       
       .contact-section {
