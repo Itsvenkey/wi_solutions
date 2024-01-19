@@ -100,7 +100,6 @@ body {
 .nav-links li:hover {
   transform: translateY(-2px);
   transition: transform 0.4s ease-in-out;
-  filter: drop-shadow(0px 5px 30px rgb(0, 0, 0));
 }
 
 .nav-links a {
@@ -220,7 +219,6 @@ body {
 
 .service-container {
   display: flex;
-  min-height: 100vh;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -230,11 +228,14 @@ body {
 .service-section {
   display: flex;
   align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 .services-list {
 
   display: flex;
+  align-items: center;
   list-style: none;
   margin-left: -30%;
   font-family: "Noto Sans", sans-serif;
@@ -243,10 +244,11 @@ width: auto;
 /* margin-top: 10%; */
 height: auto;
   padding-right:20px;
-  padding-top: 80px;
+  height: 100vh;
   overflow-x: auto;
-  scrollbar-width: 50%;
   z-index:-1;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 }
 
 .services-list::-webkit-scrollbar {
@@ -278,7 +280,6 @@ height: auto;
   margin: 0; /* Remove default margin */
   font-size: 80px;
   font-family: "Raleway", "sans-serif";
-
   white-space: nowrap;
 }
 
@@ -291,9 +292,13 @@ height: auto;
   filter: drop-shadow(0px 5px 40px rgb(0, 0, 0));
 }
 #services .heading-container {
-  
-  padding: 40% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 40vw;
   vertical-align: middle;
+  text-align: center;
   border-radius: 0 0 0 0;
   background: linear-gradient(
     to right,
@@ -386,11 +391,12 @@ filter: drop-shadow(0px 5px 40px rgb(0, 0, 0));
 width: auto;
 /* margin-top: 10%; */
 vertical-align: middle;
-height: auto;
-padding: 80px 0;
+height: 100vh;
+align-items: center;
   padding-right:20px;
   overflow-x: auto;
-  scrollbar-width: 0%;  
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
 }
 
 .team-list::-webkit-scrollbar {
@@ -431,7 +437,11 @@ padding: 80px 0;
 }
 
 #team .heading-container{
-  padding: 40% 5%;
+  height: 100vh;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   vertical-align: middle;
   border-radius: 0 0 0 0;
   background: linear-gradient(
@@ -503,7 +513,11 @@ filter: drop-shadow(0px 5px 40px rgb(0, 0, 0));
 }
 
 #contact .heading-container{
-padding: 40% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 40vw;
 vertical-align: middle;
 border-radius: 0 0 0 0;
 background: linear-gradient(
@@ -525,13 +539,15 @@ z-index: 100;
   font-family: "Noto Sans", sans-serif;
   gap: 50px;
 width: 100vw;
-margin-top: 27%;
+align-items: center;
 vertical-align: middle;
 height: 100vh;
 padding-top: 80px;
   padding-right:20px;
   overflow-x: auto;
   scrollbar-width: 50%;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
 }
 
 .first-pic{
