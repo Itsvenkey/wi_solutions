@@ -2,148 +2,317 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href='styles.css'>
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Noto+Sans:wght@400;700&display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WI Solutions</title>
+    <link rel="stylesheet" href="styles.css" />
 
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Noto+Sans:wght@400;700&display=swap"
+    />
   </head>
   <body>
     <header class="name-container">
-      <img src="images/logo4.jpg" alt="logo" class="logo" />
-      <h1 class="name">WI Solutions</h1>
+      <div class="header-contents">
+        <img src="images/logo4.jpg" alt="logo" class="logo" />
+        <h1 class="name">WI Solutions</h1>
+      </div>
     </header>
 
-    <nav class="navbar" id="navbar" >
+    <nav class="navbar" id="navbar">
       <ul class="nav-links">
-          <li ><a href="#home" >Home</a></li>
-          <li class="nav-button"><a href="#services">Services</a></li>
-          <li class="nav-button"><a href="#works">Works</a></li>
-          <li class="nav-button"><a href="#team">Team</a></li>
-          <li class="nav-button"><a href="#about">About</a></li>
-          <li class="nav-button"><a href="#contact">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li class="nav-button"><a href="#services">Services</a></li>
+        <li class="nav-button"><a href="#works">Works</a></li>
+        <li class="nav-button"><a href="#team">Team</a></li>
+        <li class="nav-button"><a href="#about">About</a></li>
+        <li class="nav-button"><a href="#contact">Contact</a></li>
       </ul>
-</nav>
-    
-    
+    </nav>
+
     <main>
       <div class="main">
         <section id="home" class="welcome-section fade-out">
           <div>
-            <h1 class="heading"> Welcome to WI Solutions
-            </h1>
+            <h1 class="heading">Welcome to WI Solutions</h1>
           </div>
           <div class="image-container">
-            <img
-              src='images/sapiens.png'
-              alt="pic"
-              class="landing-pic"
-            />
+            <img src="images/sapiens.png" alt="pic" class="landing-pic" />
           </div>
         </section>
       </div>
-
 
       <div class="service-container">
         <section id="services" class="service-section fade-out">
           <div class="arrow-container">
-            <div ><img id="arrow-right" src="images/next1.png" alt="arrow" class="arrow"  onmouseover="zoomIn('arrow-right')" onmouseout="zoomOut('arrow-right')" onclick="scrollToNextImage('.services-list',450)"></div>
-            <div ><img id="arrow-left" src="images/previous1.png" alt="arrow" class="arrow"  onmouseover="zoomIn('arrow-left')" onmouseout="zoomOut('arrow-left')" onclick="scrollToPreviousImage('.services-list',450)"></div>
-  
-        </div>
+            <div>
+              <img
+                id="arrow-right"
+                src="images/next1.png"
+                alt="arrow"
+                class="arrow"
+                onmouseover="zoomIn('arrow-right')"
+                onmouseout="zoomOut('arrow-right')"
+                onclick="scrollToNextImage('.services-list',450)"
+              />
+            </div>
+            <div>
+              <img
+                id="arrow-left"
+                src="images/previous1.png"
+                alt="arrow"
+                class="arrow"
+                onmouseover="zoomIn('arrow-left')"
+                onmouseout="zoomOut('arrow-left')"
+                onclick="scrollToPreviousImage('.services-list',450)"
+              />
+            </div>
+          </div>
 
-          <div class="heading-container">
-            <h1>Services</h1>
+          <div class="services-heading-container">
+            <h1 class="services-heading">Services</h1>
           </div>
           <div class="services-list">
-                <li class="first-pic"><img src="images/webdev.jpeg" alt="" style="mix-blend-mode: multiply; "> <p>Website Development / APIs</p></li>
-                <li><img src="images/aiml.jpeg" alt=""> <p>AI / ML / ChatBots</p></li>
-                <li><img src="images/android.jpeg" alt=""> <p>Android Applications</p></li>
-                <li class="services-last-pic"><img src="images/gamedev.jpeg" alt=""><p> Game Design / Development</p></li>
+            <li class="first-pic">
+              <img
+                src="images/webdev.jpeg"
+                alt=""
+                style="mix-blend-mode: multiply"
+              />
+              <p>Website Development / APIs</p>
+            </li>
+            <li>
+              <img src="images/aiml.jpeg" alt="" />
+              <p>AI / ML / ChatBots</p>
+            </li>
+            <li>
+              <img src="images/android.jpeg" alt="" />
+              <p>Android Applications</p>
+            </li>
+            <li class="services-last-pic">
+              <img src="images/gamedev.jpeg" alt="" />
+              <p>Game Design / Development</p>
+            </li>
           </div>
         </section>
-   </div>
-   
-  <div class="works-container">
-      <section id="works" class="works-section fade-out">
-        <div class="works-heading-container">
-          <h1 class="works-heading">our works</h1>
-        </div>
-        <div class="works-list">
-          <li><a href="https://itsvenkey9.pythonanywhere.com/" style="text-decoration: none; color: black;" target="_blank"><img src="images/blogstop.jpeg" alt="blogstop"><p>Blogstop</p></a></li>
-          <li><a href="https://itsvenkey99.pythonanywhere.com/" style="text-decoration: none; color: black;" target="_blank"><img src="images/recipehub.jpeg" alt="recipehub"><p>Recipehub</p></a></li>
-        </div>
-      </section>
-  </div>
-
-
-  <div class="team-container">
-    
-      <section id="team" class="team-section fade-out">
-        <div class="arrow-container">
-          <div ><img id="team-arrow-right" src="images/next1.png" alt="arrow" class="arrow"  onmouseover="zoomIn('team-arrow-right')" onmouseout="zoomOut('team-arrow-right')" onclick="scrollToNextImage('.team-list',450)"></div>
-          <div ><img id="team-arrow-left" src="images/previous1.png" alt="arrow" class="arrow"  onmouseover="zoomIn('team-arrow-left')" onmouseout="zoomOut('team-arrow-left')" onclick="scrollToPreviousImage('.team-list',450)"></div>
-
       </div>
-        <div class="heading-container" >
-          <h1 class="team-heading">Our Team</h1>
-        </div>
-        <div class="team-list">
-          <li class="first-pic"><a href="https://itsvenkey.github.io/responsive-portfolio/" target="_blank"><img src='images/venkey.jpg' alt="venkey"></a></li>
-          <li ><a href="http://princeraj.dorik.io" target="_blank"><img src="images/prince.JPG" alt="prince"></a></li>
-          <li><a href="#"><img src="images/krishna.jpg" alt="krishna"></a></li>
-          <li><a href="https://shantanubindhani.github.io/" target="_blank"><img src='images/shantanu.jpg' alt="shatanu"></a></li>
-          <li class="team-last-pic"> <a href="https://amandalawat2.wixsite.com/a-gamer-and-a-game-d" target="_blank"><img src='images/aman1.png' alt="aman"></a></li>
-        </div>
-      </section>
-  </div>
 
-  <div class="about-container">
-      <section id="about" class="about-section fade-out">
-        <div class="about-heading-container">
-          <h1 class="about-heading">About Us</h1>
-        </div>
-        <div class="text-container">
-          <p>
+      <div class="works-container">
+        <section id="works" class="works-section fade-out">
+          <div class="works-heading-container">
+            <h1 class="works-heading">our works</h1>
+          </div>
+          <div class="works-list">
+            <li class="works-first-pic">
+              <a
+                href="https://itsvenkey9.pythonanywhere.com/"
+                style="text-decoration: none; color: black"
+                target="_blank"
+                ><img src="images/blogstop.jpeg" alt="blogstop" />
+                <p>Blogstop</p></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://itsvenkey99.pythonanywhere.com/"
+                style="text-decoration: none; color: black"
+                target="_blank"
+                ><img src="images/recipehub.jpeg" alt="recipehub" />
+                <p>Recipehub</p></a
+              >
+            </li>
+          </div>
+        </section>
+      </div>
 
-            We are a team of developers and tech enthusiasts,
-            our team is specialized in Game Development,Web Development, AI/ML, Android App Development,
-            and Software Solutions. developers in our team are experienced in their proffessions who notes down every requests of the clients and fulfills each one of them.
+      <div class="team-container">
+        <section id="team" class="team-section fade-out">
+          <div class="arrow-container">
+            <div>
+              <img
+                id="team-arrow-right"
+                src="images/next1.png"
+                alt="arrow"
+                class="arrow"
+                onmouseover="zoomIn('team-arrow-right')"
+                onmouseout="zoomOut('team-arrow-right')"
+                onclick="scrollToNextImage('.team-list',450)"
+              />
+            </div>
+            <div>
+              <img
+                id="team-arrow-left"
+                src="images/previous1.png"
+                alt="arrow"
+                class="arrow"
+                onmouseover="zoomIn('team-arrow-left')"
+                onmouseout="zoomOut('team-arrow-left')"
+                onclick="scrollToPreviousImage('.team-list',450)"
+              />
+            </div>
+          </div>
+          <div class="team-heading-container">
+            <h1 class="team-heading">Our Team</h1>
+          </div>
+          <div class="team-list">
+            <li class="first-pic">
+              <a
+                href="https://itsvenkey.github.io/responsive-portfolio/"
+                target="_blank"
+                ><img src="images/venkey.jpg" alt="venkey"
+              /></a>
+            </li>
+            <li>
+              <a href="http://princeraj.dorik.io" target="_blank"
+                ><img src="images/prince.JPG" alt="prince"
+              /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/krishna.jpg" alt="krishna" /></a>
+            </li>
+            <li>
+              <a href="https://shantanubindhani.github.io/" target="_blank"
+                ><img src="images/shantanu.jpg" alt="shatanu"
+              /></a>
+            </li>
+            <li class="team-last-pic">
+              <a
+                href="https://amandalawat2.wixsite.com/a-gamer-and-a-game-d"
+                target="_blank"
+                ><img src="images/aman1.png" alt="aman"
+              /></a>
+            </li>
+          </div>
+        </section>
+      </div>
+
+      <div class="about-container">
+        <section id="about" class="about-section fade-out">
+          <div class="about-heading-container">
+            <h1 class="about-heading">About Us</h1>
+          </div>
+          <div class="text-container">
+            <p>
+              We are a team of developers and tech enthusiasts, our team is
+              specialized in Game Development,Web Development, AI/ML, Android
+              App Development, and Software Solutions. developers in our team
+              are experienced in their proffessions who notes down every
+              requests of the clients and fulfills each one of them.
+
+              <br /><br />
+              Each member in our team plays their significant roles. We focus on
+              Client's requirements and fullfill them with ease. Nothing feels
+              better then our clients' satifaction. with our team consisting of
+              diverse skillset we are on a journey full of challenges and
+              hardships which we will fight head on and keep moving forward.
+              <br /><br />
+              In our team full of website,AI/Ml,Android and game developers,
+              focus on designing and developing dynamic and functional websites,
+              exploring the frontiers of artificial intelligence and machine
+              learning, building user-friendly and visually appealing Android
+              applications, crafting immersive and captivating gaming
+              experiences respectively
+              <br />
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="contact-container">
+        <section id="contact" class="contact-section fade-out">
+          <div class="contact-heading-container">
+            <h1 class="contact-heading">Contact Us</h1>
+          </div>
+
+          <footer>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+           
+            <div class="contact-info-upper-container">
+              <form
+                id="myForm"
+                action="https://formspree.io/f/mleqrkyr"
+                method="POST"
+                class="contact-info-container" 
+              >
+                <h2 class="project-title">GET IN TOUCH</h2>
+                <div style="margin-bottom: 10px">
+                  <input
+                    required
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                   class="form-input"
+                  />
+                </div>
+                <div style="margin-bottom: 10px">
+                  <input
+                    required
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                    class="form-input"
+                  />
+                </div>
+
+                <div style="margin-bottom: 10px">
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    class="form-input"
+                    style="
+                      height:150%;
+                    "
+                    required
+                  ></textarea>
+                </div>
+
+                <!-- Your other form fields go here -->
+                <div style="margin-top: 10%;">
+                  <button
+                  class="btn-color-1  form-btn"
+                  type="submit"
+                >
+                  Send
+                </button>
+                </div>
+                
+              </form>
             
-            <br><br>
-            Each member in our team plays their significant roles. We focus on Client's requirements and fullfill them with ease. Nothing feels better then our clients' satifaction.
-            with our team consisting of diverse skillset we are on a journey full of challenges and hardships which we will fight head on and keep moving forward. 
-            <br><br>
-            In our team full of website,AI/Ml,Android and game developers, focus on designing and developing dynamic and functional websites, exploring the frontiers of artificial intelligence and machine learning, building user-friendly and visually appealing Android applications, crafting immersive and captivating gaming experiences respectively
-            <br>
-          </p>
-        </div>
-      </section>
-    </div>
+            <div class="contact-icons-container">
+              <ul>
+                <li>
+                  <a href="mailto:vrwisolutions@gmail.com"
+                    ><img src="images/gmail.png" alt="gmail-logo"
+                  /></a>
+                </li>
+                <li><img src="images/linkedin.png" alt="instagram-logo" /></li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/wi_solutions_/"
+                    target="_blank"
+                  >
+                    <img src="images/instagram.png" alt="instagram-logo"
+                  /></a>
+                </li>
+                <li><img src="images/facebook.png" alt="instagram-logo" /></li>
+                <li class="contact-last-pic">
+                  <a href="https://twitter.com/WI_Solutions_" target="_blank">
+                    <img src="images/twitter.png" alt="instagram-logo"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-    <div class="contact-container">
-      <section id="contact" class="contact-section fade-out">
-        <div class="arrow-container">
-          <div ><img id="contact-arrow-right" src="images/next1.png" alt="arrow" class="arrow"  onmouseover="zoomIn('contact-arrow-right')" onmouseout="zoomOut('contact-arrow-right')" onclick="scrollToNextImage('.contact-list',450)"></div>
-          <div ><img id="contact-arrow-left" src="images/previous1.png" alt="arrow" class="arrow"  onmouseover="zoomIn('contact-arrow-left')" onmouseout="zoomOut('contact-arrow-left')" onclick="scrollToPreviousImage('.contact-list',450)"></div>
-
+            <p>Copyright &#169; 2023 WI Solutions. All Rights Reserved.</p>
+            </div>
+          </footer>
+        </section>
       </div>
-        <div class="heading-container">
-          <h1 class="contact-heading">Contact Us</h1>
-        </div>
-        <div class="contact-list">
-          <li class="first-pic"><a href="mailto:vrwisolutions@gmail.com"><img src="images/gmail.png" alt="gmail-logo"></a></li>
-          <li> <img src="images/linkedin.png" alt="instagram-logo" ></li>
-          <li><a href="https://www.instagram.com/wi_solutions_/" target="_blank"> <img src="images/instagram.png" alt="instagram-logo"></a></li>
-          <li> <img src='images/facebook.png' alt="instagram-logo"></li>
-          <li class="contact-last-pic"><a href="https://twitter.com/WI_Solutions_" target="_blank"> <img src='images/twitter.png' alt="instagram-logo"></a></li>
-
-        </div>
-      </section>
-  </div>
-
+    </div>
     </main>
+
     <script src="script.js"></script>
   </body>
 </html>
